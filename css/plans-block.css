@@ -1,0 +1,80 @@
+.plans-block{
+	background: #e8ece8;
+}
+.plans-container{
+	width: 960px;
+	margin: 0 auto;
+	/* border: 1px solid red; */
+	padding: 120px 0 200px 0;
+	/* bottom  padding is approximate so far */
+	/* for paragraphs there are general styles */
+}
+.plans-container .i-b-paragraph:nth-of-type(2){
+	margin-bottom: 95px;
+}
+.price{
+	width: 300px;
+	text-align: center;
+	background: #e2e4e1;
+	padding: 30px 0 40px 0;
+	/* change to 304px */
+	
+}
+.price-columns{
+	font-size: 33px;
+	width: 960px;
+
+}
+.price-lite{
+	float: left;
+	margin-right: 30px;
+
+}
+.price-pro{
+	float: left;
+	margin-right: 30px;
+}
+.price-star{
+	float: right;
+}
+.price p:nth-of-type(2){
+	font-size: 32px;
+	font-family: "MyriadProRegular", sans-serif;
+	font-weight: 400;
+	letter-spacing: -0.72px;
+	margin-bottom: 15px;
+}
+.price span{
+	font-family: "MyriadProRegular", sans-serif;
+	color: #afacac;
+	font-size: 33px;
+	font-weight: 400;
+	letter-spacing: -0.72px;
+}
+.price p:nth-of-type(3){
+	font-family: "MyriadProRegular", sans-serif;
+	color: #b38e48;
+	font-size: 32px;
+	font-weight: 400;
+	letter-spacing: -0.72px;
+	padding-bottom: 40px;
+}
+.price p:first-of-type{
+	font-family: "MyriadProSemiBold";
+	color: #7d7b7b;
+	font-size: 33px;
+	font-weight: 400;
+	letter-spacing: -0.72px;
+	margin-bottom: 50px;
+}
+.price-details{
+	display: inline-block;
+	color: #e9ede9;
+	font-family: "MyriadProRegular", sans-serif;
+	border-radius: 13px;
+	background-color: #71ae5a;
+	padding: 11px 21px;
+	font-size: 16px;
+	letter-spacing: -0.72px;
+	font-weight: 400;
+}

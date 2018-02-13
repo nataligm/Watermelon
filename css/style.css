@@ -1,0 +1,47 @@
+ 
+
+ /* rename sections givin them names from navigation */
+ 
+ body{
+	color: #4e4e4e;
+	font-family: "MyriadProRegular", "Arial" sans-serif;
+}
+
+.container{
+	max-width: 978px;
+	margin: 0 auto;
+
+}
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+	overflow: hidden;
+}
+
+img{
+	width: 100%;
+}
+ 
+.first-info-block .section-title, 
+.second-info-block .section-title, 
+.plans-container .section-title{
+	font-family: "MyriadProRegular", sans-serif;
+	font-size: 47px;
+	letter-spacing: -0.72px;
+	margin-bottom: 20px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.first-info-block .i-b-paragraph, 
+.second-info-block .i-b-paragraph, 
+.plans-container .i-b-paragraph{
+	font-family: "MyriadProRegular", sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: -0.72px;
+	margin-bottom: 15px;
+}

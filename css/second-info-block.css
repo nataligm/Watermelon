@@ -1,0 +1,134 @@
+/* *****************************second-info-block**************************** */
+.section-image{
+	width: 250px;
+	margin: 0 auto;
+}
+.second-info-block .section-title{
+ 	letter-spacing: -0.69px;
+ 	margin-bottom: 25px;
+}
+.second-info-block{
+	background: url("../img/bg/info-block.bg.png")  no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+	color: #ffffff;
+}
+.second-info-block .section-image{
+	width: 279px;
+	margin: 0 auto;
+}
+.second-info-block .i-b-paragraph{
+	margin-bottom: 70px;
+}
+
+/* 
+ ***********************  P O I N T E R S ******************************  */  
+ .section-image-relative{
+ 	font-family: "MyriadProRegular";
+ 	font-size: 22px;
+	font-weight: 400;
+	position: relative;
+	width: 279px;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+/* ***************************** R E D ******************************** */
+.red-pointer-wrapper{
+	position: absolute;
+	top: 106px;
+    left: -167px;
+}
+
+ .red-pointer{
+ 	width: 153px;
+ 	border-bottom: 4px solid #fd6363;
+  	padding-bottom: 4px;
+}
+ 
+.red-pointer::after{
+	content: url('../img/red3216left.png');
+	position: absolute;
+    top: 11px;
+    left: 150px;
+}
+
+.red-pointer-wrapper .white-circle{
+	width: 37px;
+	height: 36px;
+	top: -7px;
+    left: 172px;
+	position: absolute;
+	background-image: url('../img/3736left.png');
+	background-repeat: no-repeat;
+} 
+/* /* ********************* Y E L L O W ********************************** */
+ .yellow-pointer{
+	width: 181px;
+    border-bottom: 4px solid  #fef45a;
+    padding-bottom: 4px;
+}
+ .yellow-pointer::after{
+	content: url('../img/3736left.png');
+	transform: scale(0.64);
+    top: 9px;
+    left: 173px;
+	position: absolute;
+	background-repeat: no-repeat;
+}  
+.yellow-pointer-wrapper{
+	position: absolute;
+	top: 187px;
+    left: -52px;
+}
+
+/* ***************************** B L U E ************************************* */
+.blue-pointer{
+	width: 161px;
+	border-bottom: 4px solid #8cdbf2;
+	padding-bottom: 4px;
+} 
+.blue-pointer span{
+	padding-left: 58px;
+}
+.blue-pointer::before{
+	content: url('../img/3736left.png');
+	transform: scale(0.68);
+   	top: 9px;
+    left: -28px;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+.blue-pointer-wrapper{
+    position: absolute;
+    top: 125px;
+    left: 221px;
+}
+
+/* ******************************G R E E N ******************************************** */
+.green-pointer{
+	width: 136px;
+    border-bottom: 4px solid #d4fa7a;
+    padding-bottom: 4px;
+}
+.green-pointer::before{
+    content: url('../img/green-before.png');
+    position: absolute;
+    left: -56px;
+    top: 25px;
+}
+.green-pointer-wrapper .white-circle{
+	width: 37px;
+	height: 36px;
+	top: 53px;
+    left: -83px;
+	position: absolute;
+	background-image: url('../img/3736left.png');
+	background-repeat: no-repeat;
+	transform: scale(0.9);
+} 
+.green-pointer-wrapper{
+	position: absolute;
+	top: 19px;
+	left: 312px;
+}
