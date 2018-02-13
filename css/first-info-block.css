@@ -9,5 +9,7 @@
 }
 
 @media screen and (max-width: 320px) {
-	
+	.first-info-block{
+		padding: 120px 15px;
+	}
 }
