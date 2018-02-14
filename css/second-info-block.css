@@ -132,3 +132,48 @@
 	top: 19px;
 	left: 312px;
 }
+
+/* ****************  responsive  ******************************* */
+@media screen and (max-width: 320px) {
+	
+	.red-pointer::after, .white-circle,
+	.blue-pointer::before, .yellow-pointer::after,
+	.green-pointer::before{
+		display: none;
+	}
+
+	.red-pointer-wrapper{
+		/* top: 40px; */
+		top: 215px;
+		left: 65px;
+	}
+
+	.yellow-pointer-wrapper{
+		/* top: 80px; */
+		top: 238px;
+		left: 65px;
+	}
+	.green-pointer-wrapper{
+		top: 263px;
+		left: 65px;
+	}
+	.blue-pointer-wrapper{
+		top: 286px;
+		left: 65px;
+}
+	.blue-pointer span{
+		padding-left: 0px;
+	}
+	.red-pointer, 
+	.yellow-pointer,
+	.green-pointer, 
+	.blue-pointer
+	{
+		width: 153px;
+		text-align: center;
+		font-size: 19px;
+		border-bottom-width: 2px;
+		padding-bottom: 2px;
+	}
+
+}
