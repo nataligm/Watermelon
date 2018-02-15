@@ -13,6 +13,11 @@
 	text-align: center;
 	/* ***********relative for responsive****** */
 }
+.container{
+	max-width: 980px;
+	margin: 0 auto;
+}
+
 
 .branding{
 	float: left;
