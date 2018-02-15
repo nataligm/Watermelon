@@ -4,7 +4,6 @@
 .plans-container{
 	width: 960px;
 	margin: 0 auto;
-	/* border: 1px solid red; */
 	padding: 120px 0 200px 0;
 	/* bottom  padding is approximate so far */
 	/* for paragraphs there are general styles */
@@ -12,23 +11,21 @@
 .plans-container .i-b-paragraph:nth-of-type(2){
 	margin-bottom: 95px;
 }
+/* ******************************************************* */
 .price{
 	width: 300px;
 	text-align: center;
 	background: #e2e4e1;
 	padding: 30px 0 40px 0;
 	/* change to 304px */
-	
 }
 .price-columns{
 	font-size: 33px;
 	width: 960px;
-
 }
 .price-lite{
 	float: left;
 	margin-right: 30px;
-
 }
 .price-pro{
 	float: left;
@@ -37,6 +34,7 @@
 .price-star{
 	float: right;
 }
+/* *********************************************************** */
 .price p:nth-of-type(2){
 	font-size: 32px;
 	font-family: "MyriadProRegular", sans-serif;
@@ -77,4 +75,16 @@
 	font-size: 16px;
 	letter-spacing: -0.72px;
 	font-weight: 400;
+}
+@media screen and (max-width: 320px) {
+	.price{
+		float: none;
+		margin: 0 auto 20px;
+	}
+	.price-columns{
+		width: 320px;
+	}
+	.plans-container{
+		width: 320px;
+	}
 }
