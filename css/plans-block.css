@@ -2,7 +2,7 @@
 	background: #e8ece8;
 }
 .plans-container{
-	width: 960px;
+	max-width: 980px;
 	margin: 0 auto;
 	padding: 120px 0 200px 0;
 	/* bottom  padding is approximate so far */
@@ -34,7 +34,7 @@
 .price-star{
 	float: right;
 }
-/* *********************************************************** */
+
 .price p:nth-of-type(2){
 	font-size: 32px;
 	font-family: "MyriadProRegular", sans-serif;
@@ -76,6 +76,17 @@
 	letter-spacing: -0.72px;
 	font-weight: 400;
 }
+
+.price-details:hover{
+	background-color: #88d36b;
+}
+
+.price-details:active{
+	background-color: #4d773d;
+}
+
+
+
 @media screen and (max-width: 320px) {
 	.price{
 		float: none;
@@ -86,5 +97,9 @@
 	}
 	.plans-container{
 		width: 320px;
+		padding-bottom: 50px;
+
+		/* ********changed padding to try ************ */
 	}
 }
+
