@@ -72,7 +72,6 @@
 @media screen and (max-width: 780px){
 	.footer-container{
 		max-width: 680px;
-		/* margin: 0 auto; */
 	}
 	.top-scroll-wrap{
 		position: absolute;
@@ -87,11 +86,7 @@
 		max-width: 400px;
 		
 	}
-	/* .footer-nav-menu{
-		max-width: 350px;
 	
-	}
-	 */
 	.footer .footer-nav-link{
 		display: inline-block;
 		
