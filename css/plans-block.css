@@ -5,22 +5,14 @@
 	max-width: 980px;
 	margin: 0 auto;
 	padding: 120px 0 200px 0;
-	/* bottom  padding is approximate so far */
-	/* for paragraphs there are general styles */
+	
 }
 .plans-container .i-b-paragraph:nth-of-type(2){
 	margin-bottom: 95px;
 }
-/* ******************************************************* */
+/* ************************************************** */
 .price{
-	/* width: 300px;
-	text-align: center;
 	background: #e2e4e1;
-	padding: 30px 0 40px 0;
-	float: left; */
-	/* change to 304px */
-
-    background: #e2e4e1;
     width: 30%;
     min-width: 250px;
     margin: 1%;
@@ -28,9 +20,6 @@
     display: inline-block;
 }
 .price-columns{
-	/* font-size: 33px;
-	width: 960px; */
-
     max-width: 960px;
     margin: 0 auto;
     font-size: 0;
@@ -89,7 +78,7 @@
 	color: #e9ede9
 }
 
-
+/* ************ media queries******************* */
 @media screen and (max-width: 480px) {
 	.price{
 		width: 100%;
@@ -97,15 +86,12 @@
 		float: none;
 	}
 	.price:nth-child(-n+2){
-		/* margin-right: auto; */
 		margin-bottom: 30px;
 	}
 	.plans-container{
 		max-width: 480px;
 		padding-bottom: 70px;
 		padding-top: 80px;
-	/* 	padding-left: 40px;
-		padding-right: 40px; */
 	}
 	
 	.price-columns{
@@ -133,7 +119,6 @@
 		width: 320px;
 		padding-bottom: 50px;
 		padding-top: 60px;
-		/* ********changed padding to try ************
 	}
 
 	.plans-container .i-b-paragraph:nth-of-type(2) {
