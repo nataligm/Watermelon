@@ -38,7 +38,7 @@
 	letter-spacing: 0.77px;
 	color: #958f8f;
 }
-/* *************************top-scroll-button********************************** */
+/* **********************top-scroll-button***************** */
 .top-scroll-wrap {
 	display: block;
     width: 48px;
@@ -68,7 +68,7 @@
     bottom: 19px;
 }
 
-/* *************************************************************** */
+/* ********************* media queries **************************** */
 @media screen and (max-width: 780px){
 	.footer-container{
 		max-width: 680px;
