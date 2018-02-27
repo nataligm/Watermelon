@@ -1,4 +1,4 @@
-/* *****************************second-info-block**************************** */
+
 .section-image{
 	width: 250px;
 	margin: 0 auto;
@@ -133,7 +133,7 @@
 	left: 312px;
 }
 
-/* ****************  responsive  ******************************* */
+/* ****************  media queries  ***************************** */
 
 @media screen and (max-width: 480px) {
 	.second-info-block{
