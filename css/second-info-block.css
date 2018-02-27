@@ -134,8 +134,16 @@
 }
 
 /* ****************  responsive  ******************************* */
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 480px) {
+	.second-info-block{
+		padding: 70px 0 120px;
+	}
 	
+	.second-info-block .i-b-paragraph{
+		margin-bottom: 30px;
+	}
+
 	.red-pointer::after, .white-circle,
 	.blue-pointer::before, .yellow-pointer::after,
 	.green-pointer::before{
@@ -143,22 +151,20 @@
 	}
 
 	.red-pointer-wrapper{
-		/* top: 40px; */
-		top: 215px;
+		top: 220px;
 		left: 65px;
 	}
 
 	.yellow-pointer-wrapper{
-		/* top: 80px; */
-		top: 238px;
+		top: 243px;
 		left: 65px;
 	}
 	.green-pointer-wrapper{
-		top: 263px;
+		top: 268px;
 		left: 65px;
 	}
 	.blue-pointer-wrapper{
-		top: 286px;
+		top: 291px;
 		left: 65px;
 }
 	.blue-pointer span{
@@ -175,5 +181,56 @@
 		border-bottom-width: 2px;
 		padding-bottom: 2px;
 	}
+
+}
+
+
+@media screen and (max-width: 320px) {
+	.second-info-block{
+		padding: 70px 0 120px;
+	}
+	
+	.second-info-block .i-b-paragraph{
+		margin-bottom: 30px;
+	}
+
+	.red-pointer::after, .white-circle,
+	.blue-pointer::before, .yellow-pointer::after,
+	.green-pointer::before{
+		display: none;
+	}
+
+	.red-pointer-wrapper{
+		top: 220px;
+		left: 65px;
+	}
+
+	.yellow-pointer-wrapper{
+		top: 243px;
+		left: 65px;
+	}
+	.green-pointer-wrapper{
+		top: 268px;
+		left: 65px;
+	}
+	.blue-pointer-wrapper{
+		top: 291px;
+		left: 65px;
+}
+	.blue-pointer span{
+		padding-left: 0px;
+	}
+	.red-pointer, 
+	.yellow-pointer,
+	.green-pointer, 
+	.blue-pointer
+	{
+		width: 153px;
+		text-align: center;
+		font-size: 19px;
+		border-bottom-width: 2px;
+		padding-bottom: 2px;
+	}
+	
 
 }
