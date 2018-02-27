@@ -17,6 +17,7 @@
 	text-align: center;
 	background: #e2e4e1;
 	padding: 30px 0 40px 0;
+	float: left;
 	/* change to 304px */
 }
 .price-columns{
@@ -24,11 +25,11 @@
 	width: 960px;
 }
 .price-lite{
-	float: left;
+	/* float: left; */
 	margin-right: 30px;
 }
 .price-pro{
-	float: left;
+	/* float: left; */
 	margin-right: 30px;
 }
 .price-star{
@@ -79,27 +80,78 @@
 
 .price-details:hover{
 	background-color: #88d36b;
+	color: #616661;
 }
 
 .price-details:active{
 	background-color: #4d773d;
+	color: #e9ede9
+}
+
+@media screen and (max-width: 780px) {
+	
+	.plans-container{
+		max-width: 780px;
+	}
+	.price{
+		max-width: 200px;
+	}
+	.price:nth-child(-n+2){
+		margin-right: 40px;
+	}
+	.price-columns{
+		width: 680px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.price{
+		width: 100%;
+    	max-width: 100%;
+		float: none;
+	}
+	.price:nth-child(-n+2){
+		/* margin-right: auto; */
+		margin-bottom: 30px;
+	}
+	.plans-container{
+		max-width: 480px;
+		padding-bottom: 70px;
+		padding-top: 80px;
+	/* 	padding-left: 40px;
+		padding-right: 40px; */
+	}
+	
+	.price-columns{
+		max-width: 400px;
+		margin: 0 auto;
+	}
 }
 
 
-
 @media screen and (max-width: 320px) {
+	
 	.price{
+		max-width: 270px;
 		float: none;
 		margin: 0 auto 20px;
 	}
+	.price:nth-child(-n+2){
+		margin-right: auto;
+	}
 	.price-columns{
-		width: 320px;
+		max-width: 320px;
 	}
 	.plans-container{
 		width: 320px;
 		padding-bottom: 50px;
+		padding-top: 60px;
+		/* ********changed padding to try ************
+	}
 
-		/* ********changed padding to try ************ */
+	.plans-container .i-b-paragraph:nth-of-type(2) {
+    	margin-bottom: 60px;
 	}
 }
 
