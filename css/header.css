@@ -1,9 +1,4 @@
 
-/* to commit */
-/* changed width: 113px in .btn-buy-now
- to padding(left and right) 
-so that hte whole width equals 113.67px */
-
 .header{
 	background-image: linear-gradient(to right, #355a38, #4c7b4f),
 	linear-gradient(to left, #355a38, #4c7b4f); 
@@ -14,15 +9,12 @@ so that hte whole width equals 113.67px */
 
 .header-top{
 	margin-bottom: 112px;
-	/* position: relative; */
 	text-align: center;
-	/* ***********relative for responsive****** */
 }
 .container{
 	max-width: 980px;
 	margin: 0 auto;
 }
-
 
 .branding{
 	float: left;
@@ -106,7 +98,7 @@ so that hte whole width equals 113.67px */
 	
 } 
 
-/* ********************responsive************************* */
+/* ************************************************** */
 .nav-burger-button{
 	display: none;
 }
@@ -114,8 +106,8 @@ so that hte whole width equals 113.67px */
 #burger{
 	display: none;
 }
-/* can add a hamburger with :before/:after; */
-/********************** responsive *************** */
+
+/********************** media queries *************** */
 
 
 @media screen and (max-width: 780px) {
@@ -129,7 +121,6 @@ so that hte whole width equals 113.67px */
 }
 }
 
-/* ******************************************** */
 
 @media screen and (max-width: 480px){
 	
@@ -191,8 +182,6 @@ so that hte whole width equals 113.67px */
 }
 
 
-
-/* *************************************************** */
 @media screen and (max-width: 320px) {
 .header-top{
 	margin-bottom: 15px;
