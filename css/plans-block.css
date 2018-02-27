@@ -89,22 +89,6 @@
 	color: #e9ede9
 }
 
-/* @media screen and (max-width: 780px) {
-	
-	.plans-container{
-		max-width: 780px;
-	}
-	.price{
-		max-width: 200px;
-	}
-	.price:nth-child(-n+2){
-		margin-right: 40px;
-	}
-	.price-columns{
-		width: 680px;
-		margin: 0 auto;
-	}
-} */
 
 @media screen and (max-width: 480px) {
 	.price{
