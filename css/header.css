@@ -1,14 +1,20 @@
 
+/* to commit */
+/* changed width: 113px in .btn-buy-now
+ to padding(left and right) 
+so that hte whole width equals 113.67px */
+
 .header{
 	background-image: linear-gradient(to right, #355a38, #4c7b4f),
 	linear-gradient(to left, #355a38, #4c7b4f); 
 	background-size: cover;
 	padding-top: 40px;
+	padding-bottom: 100px;
 }
 
 .header-top{
 	margin-bottom: 112px;
-	position: relative;
+	/* position: relative; */
 	text-align: center;
 	/* ***********relative for responsive****** */
 }
@@ -55,7 +61,6 @@
 .header-bottom{
 	margin: 0 auto;
 	border-bottom: 1px solid transparent;
-	padding-bottom: 100px;
 }
 
 .header-bottom .section-title{
@@ -69,9 +74,8 @@
 }
 
 .btn-buy-now{
-	width: 113px;
-    box-sizing: border-box;
-    padding: 12px 0;
+	box-sizing: border-box;
+    padding: 12px 27px;
     border: 3px solid #ffffff;
     text-align: center;
 }
@@ -114,9 +118,75 @@
 /********************** responsive *************** */
 
 
+@media screen and (max-width: 780px) {
 
-/* *****************responsive*************************************** */
+.container{
+	max-width: 640px;
+}
 
+.link-nav:nth-child(-n+4) {
+    margin-right: 18px;
+}
+}
+
+/* ******************************************** */
+
+@media screen and (max-width: 480px){
+	
+.container {
+    max-width: 340px;
+}
+.header{
+	padding-bottom: 70px;
+}
+.header-top {
+    margin-bottom: 80px;
+}
+
+.btn-buy-now{
+	border: none;
+}
+
+.nav-burger-button{
+	display: block;
+	float: right;
+	width: 40px;
+	height: 40px;
+	/* background: red; */
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 40px;
+	font-family: "MyriadProSemiBold", sans-serif;
+}
+.navigation{
+	visibility: hidden;
+	opacity: 0;
+	display: block;
+	transition: all 1s ease;
+	position: absolute;
+	right: 40px;
+	top: 58px;
+	width: 100px;		 
+}
+
+.navigation .link-nav{
+	display: block;
+	padding: 10px 0;
+}
+#burger:checked + .navigation{
+	visibility: visible;
+	opacity: 1;
+}
+
+.link-nav:nth-child(-n+4) {
+    margin-right: 0px;
+}
+
+
+
+}
+
+/* *************************************************** */
 @media screen and (max-width: 320px) {
 .header-top{
 	margin-bottom: 15px;
@@ -125,14 +195,6 @@
 .branding{
     float: none;
     margin-bottom: 20px; 
-}
-
-.nav-burger-button{
-	display: block;
-	color: #fff;
-	font-weight: 400;
-	margin-bottom: 10px;
-	font-family: "MyriadProSemiBold", sans-serif;
 }
 
 .navigation .link-nav{
@@ -144,7 +206,6 @@
 .btn-buy-now{
 	width: 100%;
 	border: none;
-
 }
 
 .btn-buy-now:hover{
@@ -157,15 +218,24 @@
 	color: #fff;
 	border-color: none;
 }
-
+/* *************************************************** */
+.nav-burger-button{
+	float: none;
+    width: 100%;
+	display: block;
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 10px;
+	font-family: "MyriadProSemiBold", sans-serif;
+}
 .navigation{
 	visibility: hidden;
 	opacity: 0;
 	display: block;
-	margin: 0 auto;
 	transition: all 1s ease;
 	position: absolute;
 	margin: 0 auto;
+	top: 120px;
 	right: 0;
 	left: 0;
 	background: #416a42	;
@@ -176,6 +246,7 @@
 	visibility: visible;
 	opacity: 1;
 }
+/* ***************************************** */
 .header{
 	max-width: 320px;
 }
