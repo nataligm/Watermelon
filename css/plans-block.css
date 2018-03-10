@@ -2,12 +2,9 @@
 	background: #e8ece8;
 }
 .plans-container{
-	max-width: 980px;
-	margin: 0 auto;
 	padding: 120px 0 200px 0;
-	
 }
-.plans-container .i-b-paragraph:nth-of-type(2){
+.plans-container .i-b-paragraph{
 	margin-bottom: 95px;
 }
 /* ************************************************** */
