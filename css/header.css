@@ -45,6 +45,7 @@
 	max-width: 252px;
 	margin: 0 auto;
 }
+.header:hover .header-bottom>.header-image{}
 
 .header-bottom{
 	margin: 0 auto;
@@ -60,6 +61,45 @@
 	color: #fff; 
 	margin-bottom: 30px;
 }
+.header-bottom .section-title>span{
+	opacity: 0;
+}
+
+.header .header-bottom .section-title>span:first-child{
+	-webkit-animation: 'fadeOut' 1s forwards;
+	-moz-animation: 'fadeOut' 1s forwards;
+	-o-animation: 'fadeOut' 1s forwards;
+	animation: 'fadeOut' 1s forwards;
+}
+.header .header-bottom .section-title>span:nth-child(2){
+	-webkit-animation: 'fadeOut' 1s 0.5s forwards;
+	-moz-animation: 'fadeOut' 1s 0.5s forwards;
+	-o-animation: 'fadeOut' 1s 0.5s forwards;
+	animation: 'fadeOut' 1s 0.5s forwards;
+}
+.header .header-bottom .section-title>span:nth-child(3){
+	-webkit-animation: 'fadeOut' 1s 1s forwards;
+	-moz-animation: 'fadeOut' 1s 1s forwards;
+	-o-animation: 'fadeOut' 1s 1s forwards;
+	animation: 'fadeOut' 1s 1s forwards;
+}
+@-webkit-keyframes fadeOut{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
 
 .btn-buy-now{
 	box-sizing: border-box;
@@ -72,7 +112,7 @@
 	background-image: linear-gradient(#4b794e, #7db34f);
 }
 .btn-buy-now:active{
-	box-shadow:inset 0px 0px 15px 0 #000;
+	box-shadow:inset 0 0 15px 0 #000;
 	text-decoration:none;
 	color: #1f3320;
 	border-color: #043d2a;
@@ -91,7 +131,6 @@
 
 .logo-link:active{
 	color: #4b794e;
-	
 } 
 
 /* ************************************************** */
@@ -107,76 +146,80 @@
 
 
 @media screen and (max-width: 780px) {
+    .container{
+        max-width: 640px;
+    }
 
-.container{
-	max-width: 640px;
-}
-
-.link-nav:nth-child(-n+4) {
-    margin-right: 18px;
-}
-}
-
-
-@media screen and (max-width: 480px){
-	
-.container {
-    max-width: 340px;
-}
-.header{
-	padding-bottom: 70px;
-}
-.header-top {
-    margin-bottom: 80px;
+    .link-nav:nth-child(-n+4) {
+        margin-right: 18px;
+    }
 }
 
-.btn-buy-now{
-	border: none;
-}
 
-.btn-buy-now:hover{
-	text-decoration: underline;
-	background-image: none;
-}
-.btn-buy-now:active{
-	box-shadow: none;
-	text-decoration: underline;
-	color: #fff;
-	
-}
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 340px;
+    }
 
-.nav-burger-button{
-	display: block;
-	float: right;
-	color: #fff;
-	font-weight: 400;
-	margin-bottom: 40px;
-	font-family: "MyriadProSemiBold", sans-serif;
-}
-.navigation{
-	visibility: hidden;
-	opacity: 0;
-	display: block;
-	transition: all 1s ease;
-	position: absolute;
-	right: 40px;
-	top: 58px;
-	width: 100px;		 
-}
+    .header {
+        padding-bottom: 70px;
+    }
 
-.navigation .link-nav{
-	display: block;
-	padding: 10px 0;
-}
-#burger:checked + .navigation{
-	visibility: visible;
-	opacity: 1;
-}
+    .header-top {
+        margin-bottom: 80px;
+    }
 
-.link-nav:nth-child(-n+4) {
-    margin-right: 0px;
-}
+    .btn-buy-now {
+        border: none;
+    }
 
+    .btn-buy-now:hover {
+        text-decoration: underline;
+        background-image: none;
+    }
+
+    .btn-buy-now:active {
+        box-shadow: none;
+        text-decoration: underline;
+        color: #fff;
+
+    }
+
+    .nav-burger-button {
+        display: block;
+        float: right;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 40px;
+        font-family: "MyriadProSemiBold", sans-serif;
+    }
+
+    .navigation {
+        visibility: hidden;
+        opacity: 0;
+        display: block;
+        transition: all 1s ease;
+        position: absolute;
+        right: 40px;
+        top: 58px;
+        width: 100px;
+    }
+
+    .navigation .link-nav {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #burger:checked + .navigation {
+        visibility: visible;
+        opacity: 1;
+        z-index: 999;
+    }
+
+    .link-nav:nth-child(-n+4) {
+        margin-right: 0;
+    }
+}
 
 @media screen and (max-width: 320px) {
 .header-top{
@@ -185,7 +228,7 @@
 
 .branding{
     float: none;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .navigation .link-nav{
@@ -207,7 +250,7 @@
 	box-shadow: none;
 	text-decoration: underline;
 	color: #fff;
-	
+
 }
 /* *************************************************** */
 .nav-burger-button{
@@ -230,9 +273,9 @@
 	right: 0;
 	left: 0;
 	background: #416a42	;
-	width: 150px;		 
+	width: 260px;
 }
-	
+
 #burger:checked + .navigation{
 	visibility: visible;
 	opacity: 1;
@@ -248,6 +291,7 @@
 
 .header-bottom .section-title{
 	max-width: 320px;
-	
+
 }
 }
+
