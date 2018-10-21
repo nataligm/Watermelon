@@ -21,6 +21,7 @@
 	margin-bottom: 70px;
 }
 
+
 /* 
  ***********************  P O I N T E R S ******************************  */  
  .section-image-relative{
@@ -34,18 +35,25 @@
 	
 }
 /* ***************************** R E D ******************************** */
-.red-pointer-wrapper{
+.red-pointer-wrapper {
 	position: absolute;
 	top: 106px;
-    left: -167px;
+	left: -167px;
+    opacity: 0;
 }
 
- .red-pointer{
+.red-pointer{
  	width: 153px;
  	border-bottom: 4px solid #fd6363;
   	padding-bottom: 4px;
+ }
+.second-info-block > .container:hover .section-image-relative > .red-pointer-wrapper{
+    animation: 'fadeOut' 1s forwards;
+    -webkit-animation: 'fadeOut' 1s forwards;
+    -moz-animation: 'fadeOut' 1s forwards;
+    -o-animation: 'fadeOut' 1s forwards;
 }
- 
+
 .red-pointer::after{
 	content: url('../img/red3216left.png');
 	position: absolute;
@@ -61,7 +69,8 @@
 	position: absolute;
 	background-image: url('../img/3736left.png');
 	background-repeat: no-repeat;
-} 
+}
+
 /* /* ********************* Y E L L O W ********************************** */
  .yellow-pointer{
 	width: 181px;
@@ -80,6 +89,13 @@
 	position: absolute;
 	top: 187px;
     left: -52px;
+    opacity: 0;
+}
+.second-info-block > .container:hover .section-image-relative > .yellow-pointer-wrapper{
+    animation: 'fadeOut' 1s 1s forwards;
+    -webkit-animation: 'fadeOut' 1s 1s forwards;
+    -moz-animation: 'fadeOut' 1s 1s forwards;
+    -o-animation: 'fadeOut' 1s 1s forwards;
 }
 
 /* ***************************** B L U E ************************************* */
@@ -103,7 +119,15 @@
     position: absolute;
     top: 125px;
     left: 221px;
+    opacity: 0;
 }
+.second-info-block > .container:hover .section-image-relative > .blue-pointer-wrapper{
+    animation: 'fadeOut' 1s 2s forwards;
+    -webkit-animation: 'fadeOut' 1s 2s forwards;
+    -moz-animation: 'fadeOut' 1s 2s forwards;
+    -o-animation: 'fadeOut' 1s 2s forwards;
+}
+
 
 /* ******************************G R E E N ******************************************** */
 .green-pointer{
@@ -131,14 +155,54 @@
 	position: absolute;
 	top: 19px;
 	left: 312px;
+    opacity: 0;
+}
+.second-info-block > .container:hover .section-image-relative > .green-pointer-wrapper {
+    animation: 'fadeOut' 1s 3s forwards;
+    -webkit-animation: 'fadeOut' 1s 3s forwards;
+    -moz-animation: 'fadeOut' 1s 3s forwards;
+    -o-animation: 'fadeOut' 1s 3s forwards;
 }
 
+@-webkit-keyframes 'fadeOut'{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-moz-keyframes 'fadeOut'{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-o-keyframes 'fadeOut'{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes 'fadeOut'{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
 /* ****************  media queries  ***************************** */
 
 @media screen and (max-width: 480px) {
-	.second-info-block{
+    .second-info-block{
 		padding: 70px 0 120px;
-	}
+    }
 	
 	.second-info-block .i-b-paragraph{
 		margin-bottom: 30px;
@@ -163,10 +227,22 @@
 		top: 268px;
 		left: 65px;
 	}
+    .second-info-block > .container:hover .section-image-relative > .green-pointer-wrapper {
+        animation-delay: 2s;
+        -webkit-animation-delay: 2s;
+        -moz-animation-delay: 2s;
+        -o-animation-delay: 2s;
+    }
 	.blue-pointer-wrapper{
 		top: 291px;
 		left: 65px;
-}
+    }
+    .second-info-block > .container:hover .section-image-relative > .blue-pointer-wrapper{
+        animation-delay: 3s;
+        -webkit-animation-delay: 3s;
+        -moz-animation-delay: 3s;
+        -o-animation-delay: 3s;
+    }
 	.blue-pointer span{
 		padding-left: 0px;
 	}
