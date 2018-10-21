@@ -7,6 +7,49 @@
 .first-info-block .i-b-paragraph{
 	margin-bottom: 75px;
 }
+.first-info-block .container .section-image{
+	transform: scale(0.5);
+}
+.first-info-block > .container:hover .section-image{
+	-webkit-animation:
+		'spin' 6s ease 1 forwards;
+	animation:
+		'spin' 6s ease 1 forwards;
+}
+@-webkit-keyframes 'fadeOut' {
+	0%{
+		opacity: 0;
+	}
+	30%{
+		opacity: 1;
+	}
+}
+@keyframes 'fadeOut' {
+	0%{
+		opacity: 0;
+	}
+	30%{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes 'spin' {
+	30%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(-180deg);
+	}
+}
+
+@keyframes 'spin' {
+	30%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(-180deg);
+	}
+}
+
 
 @media screen and (max-width: 480px) {
 	.first-info-block{
